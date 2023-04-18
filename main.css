@@ -1,0 +1,122 @@
+*{/*essa é uma classe que podemos chamar de RESET pois ela zera todas as configuraçoes que vem por padrão*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header{/*Nesse caso como a tag HEADER e bem generica precisamos dizer que queremos apenas a do cabeçalho e para 
+    isso chamamos a tag BODY(tag pai) e usamos o sinal > para indicar que queremos a tag HEADER filha e não as genericas */
+    background-color: #2f3640;
+    padding: 16px 0;/*Padding serio como um espaçamento esque os itens da pagina.*/
+    color: #f5f6fa;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container{/*Esse container serve para determinar o tamanho padrão da tela assim independente do monitor ela 
+    vai manter as proporçoes setadas*/
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles{
+    display: flex;/*Manter tudo alinhado*/
+    flex-wrap: wrap;/*Esse parametro flex-warp serve para impedir que o limite de largura determinado 
+    seja violado*/
+    justify-content: space-between; /*Serve para deixar os itens sepados de forma igualitaria*/
+}
+
+.articles article img{/*Aqui esta sendo definido o tamanho da imagem*/
+    /*height: 180px;*/
+    width: 100%;/*Aqui a Largura da imagem está configurada*/
+    height: 60%;
+    /*object-fit: contain;*/ /*O Contain ele ajusta o tamanho da imagem mais preenche com uma borda branca caso falte*/
+    object-fit: cover; /*O Cover ele amplia a imagem para ficar igual, mas esconde o que não cabe no tamanho selecionado*/
+}
+
+.articles article{/*Aqui está sendo definido o tamanho dos artigos*/
+    width: 30%;
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2, .articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a{
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;/*Essa tag serve para remover o _ dos hiperlinks*/
+    font-weight: bold;/*é uma maneira de deixar a fonte com o estilo de negrito*/
+    margin-top: 8px;
+}
+
+.articles article a:hover {/*O :houver serve para indicar que quando o mouse está em cima do botão algo vai acontecer*/
+    text-decoration: underline;
+}
+
+.articles article p, .articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#Sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#Sports .articles article a {
+    background-color: #009432;
+}
+
+#Economy {
+    background-color: #f8f59f;
+}
+
+#Economy .articles article a {
+    background-color: #ff9f1a;
+}
+
+#Tecnologia {
+    background-color: rgba(93, 234, 234, 0.636);
+}
+
+#Tecnologia .articles article a {
+    background-color: red;
+}
+
+#Entretenimento {
+    background-color: #f8b14efc;
+}
