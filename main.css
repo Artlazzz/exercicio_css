@@ -45,7 +45,7 @@ header li a {
 .articles article img{/*Aqui esta sendo definido o tamanho da imagem*/
     /*height: 180px;*/
     width: 100%;/*Aqui a Largura da imagem está configurada*/
-    height: 60%;
+    height: 50%;
     /*object-fit: contain;*/ /*O Contain ele ajusta o tamanho da imagem mais preenche com uma borda branca caso falte*/
     object-fit: cover; /*O Cover ele amplia a imagem para ficar igual, mas esconde o que não cabe no tamanho selecionado*/
 }
